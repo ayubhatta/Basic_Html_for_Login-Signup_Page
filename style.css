@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Adjusted width */
+    max-width: 100%;
+  }
+  
+  .form-heading {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Text color */
+    font-size: 24px; /* Font size */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background:linear-gradient(to bottom right, #02da90, #44ba7c); /* Red gradient background */
+    color: white; /* Text color */
+  }
+  
+  .login-link,
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Black color */
+  }
+  
+  .signup-link a, .login-link a {
+    color: #ff0000; /* Red color */
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Added margin */
+  }
+  
+  .remember-me input[type="checkbox"] {
+    margin-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b0281a; /* Dark red border */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .remember-me input[type="checkbox"]:checked {
+    background-color: #b0281a; /* Dark red background when checked */
+  }
+  
+  .remember-me input[type="checkbox"]:checked::before {
+    content: '\2714'; /* Checkmark symbol */
+    display: block;
+    text-align: center;
+    line-height: 18px;
+    color: white; /* Text color */
+  }
+  
+  .forgot-password {
+    margin-left: auto;
+    text-decoration: none;
+    color: #ff0000; /* Red color */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
